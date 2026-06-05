@@ -285,13 +285,18 @@ footer button {
 .card16{
   display: flex;
 }
+.card17{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
 .btin {
   width: 228px;
   height: 52px;
   background-color: #999894;
   border-radius: 15px;
   gap: 10px;
-  margin-top: 50px;
+  margin-top: 80px;
   color: #fff;
   border: none;
 }
