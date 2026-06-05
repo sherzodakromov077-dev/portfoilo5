@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   margin-bottom: 200px;
   position: sticky;
@@ -148,7 +151,6 @@ h1 {
 }
 h3 {
   font-size: 30px;
-  margin-bottom: 80px;
   display: flex;
   justify-content: center;
 }
@@ -280,7 +282,7 @@ footer button {
   height: 20px;
   border: 2px solid white;
 }
-.card17 {
+.card16{
   display: flex;
 }
 .btin {
