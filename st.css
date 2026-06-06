@@ -1,41 +1,39 @@
+/* Umumiy sozlamalar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
 header {
-  margin-bottom: 200px;
+  margin-bottom: 80px;
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #eee;
   background-color: #fff;
+  padding: 15px 0;
 }
 h2 {
   font-size: 24px;
   color: #36384e;
 }
 .conterti {
-  max-width: 1728px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-.navbar {
-  display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-between;
+  padding: 0 20px;
 }
 .nav-links {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  gap: 40px;
 }
 li {
   list-style: none;
@@ -43,21 +41,25 @@ li {
 a {
   text-decoration: none;
   color: #18191f;
+  transition: 0.3s ease;
 }
 .btn {
-  width: 131.771484375px;
-  height: 41.34323501586914px;
-  border-radius: 10px;
+  padding: 10px 24px;
+  border-radius: 6px;
   background-color: #e5b300;
   color: #fff;
   border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 .btn:hover {
-  background: linear-gradient(30deg, #000000, #4a2800);
-  background: linear-gradient(30deg, #000000, #4a2800, #000000);
+  background-color: #c99d00;
 }
+
+/* Hero & Main kontent stillari */
 .p {
   background-color: #e5b300;
+  padding: 0 5px;
 }
 h1 {
   color: #fff;
@@ -71,236 +73,337 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1728px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  gap: 50px;
+  gap: 30px;
+  padding: 0 20px;
 }
 .card1 {
   background-image: url(img/5bd9992b2c50feae7bb1aab972fbac661e147248.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1484px;
-  height: 808px;
-  margin-left: 120px;
-  gap: 10px;
+  width: 100%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
 }
 .card2 {
-  margin: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 40px 0;
+  text-align: center;
 }
 .card2 p {
-  font-size: 20px;
-}
-.card3 button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
 }
 .btni {
-  margin: 50px;
-  width: 180px;
-  height: 65px;
-  border-radius: 15px;
+  margin-top: 30px;
+  padding: 15px 40px;
+  border-radius: 8px;
   background-color: #e5b300;
   border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 .btni:hover {
-  background: linear-gradient(30deg, #000000, #4a2800);
-  background: linear-gradient(30deg, #000000, #4a2800, #000000);
-  color: #fff;
-}
-.card4 {
-  margin-left: 130px;
+  background-color: #c99d00;
 }
 .b {
   color: #e5b300;
+  font-weight: bold;
 }
 .card5 {
   width: 100%;
-  height: 450px;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  background-position: center;
-  gap: 27px;
+  gap: 20px;
   background-image: url(img/87850363149d4436424aa495da631e9a850e1e5a.png);
-  padding-bottom: 50px;
-}
-.card5 img {
-  width: 75px;
-  height: 75px;
-  display: flex;
-  align-items: center;
+  background-size: cover;
+  padding: 60px 20px;
+  border-radius: 12px;
 }
 .card6 {
-  width: 407px;
-  height: 206px;
+  width: 32%;
   background-color: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
-.card6 p {
-  padding: 8px;
+.card6 img {
+  width: 50px;
+  height: 50px;
 }
-h3 {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
+.card7 h3 {
+  font-size: 20px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.card7 p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
 }
 .card9 {
-  width: 433px;
-  height: 361px;
-  gap: 18px;
+  width: 100%;
+  text-align: center;
 }
 .card9 img {
-  width: 433px;
-  height: 278px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card9 h2 {
+  font-size: 20px;
+  margin: 15px 0 5px;
 }
 .card9 p {
   color: #e5b300;
+  font-weight: bold;
+  font-size: 14px;
 }
-
 .cardf {
-  gap: 50px;
+  gap: 30px;
   display: flex;
-  justify-content: center;
+  width: 100%;
+}
+.card8 {
+  flex: 1;
 }
 .hero {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .hr {
-  text-align: center;
-  width: 133px;
-  height: 13px;
-  border-radius: 20px;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
   background-color: #e5b300;
+  border: none;
+  margin-bottom: 20px;
 }
 .bk {
   color: #e5b300;
   border: 1px solid #e5b300;
-  width: 146.99978637695312px;
-  height: 52px;
-  padding: 16px 32px;
-  border-radius: 15px;
-  margin-left: 40%;
-  margin-top: 70px;
-  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  background: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }
 .bk:hover {
-  background: linear-gradient(30deg, #000000, #4a2800);
-  background: linear-gradient(30deg, #000000, #4a2800, #000000);
+  background-color: #e5b300;
   color: #fff;
 }
-.card10 {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
+
+/* ==========================================
+   YANGILANGAN: "We're here to help" bo'limi
+   ========================================== */
+.help-section {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
 }
-.card11 img {
-  margin-right: 100px;
-}
-.card12 {
-  margin-left: 100px;
-}
-.card12 p {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.card12 h2 {
-  margin-bottom: 10px;
-  font-size: 32px;
-}
-.card13 {
-  display: flex;
-}
-.card14 {
+.container-help {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 50px;
 }
-.card14 img {
-  margin-left: 7px;
-  width: 40px;
-  height: 30px;
+.help-img {
+  flex: 1;
 }
-.card14 p {
+.help-img img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+.help-content {
+  flex: 1;
+}
+.help-content h2 {
+  font-size: 38px;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.help-content p {
   font-size: 16px;
+  color: #4f4f4f;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
-.button {
-  width: 152px;
-  height: 52px;
+.help-buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.btn-faq {
+  width: 140px;
+  height: 44px;
   background-color: #e5b300;
-  gap: 10px;
-  border-radius: 15px;
-  color: #fff;
+  color: white;
   border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.button:hover {
-  background: linear-gradient(30deg, #000000, #4a2800);
-  background: linear-gradient(30deg, #000000, #4a2800, #000000);
+.btn-faq:hover {
+  background-color: #cd9f00;
 }
-.card15 h2 p {
-  text-align: center;
+.btn-ask {
+  color: #e5b300;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-footer p {
-  margin: 30px;
-  color: #fff;
-  font-size: 20px;
+.btn-ask:hover {
+  color: #cd9f00;
 }
-footer h2 {
-  margin: 30px;
-  color: #fff;
-  font-size: 32px;
-}
+
+/* ==========================================
+   YANGILANGAN: Footer va Newsletter bo'limi (Rasmga mos holatda)
+   ========================================== */
 footer {
   background-color: #36384e;
-}
-footer span {
+  padding: 80px 0 30px 0;
   color: #fff;
 }
-footer button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
 }
-.inp {
-  display: flex;
-  justify-content: center;
+.newsletter-section h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.newsletter-section p {
+  color: #cbd5e1;
   font-size: 16px;
-  width: 794px;
-  height: 77px;
+  margin-bottom: 40px;
 }
-.ni {
-  width: 27px;
-  height: 20px;
-  border: 2px solid white;
-}
-.card16{
+.form-container {
   display: flex;
-}
-.card17{
-  display: flex;
-  justify-content:flex-start;
+  flex-direction: column;
   align-items: center;
+  max-width: 650px;
+  margin: 0 auto;
 }
-.btin {
-  width: 228px;
-  height: 52px;
-  background-color: #999894;
-  border-radius: 15px;
+.footer-input {
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
   gap: 10px;
-  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.checkbox-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #e5b300;
+  cursor: pointer;
+}
+.checkbox-container label {
+  font-size: 14px;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+.btn-subscribe {
+  width: 180px;
+  height: 48px;
+  background-color: #999894;
   color: #fff;
   border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
 }
-.btin:hover {
-  background: linear-gradient(30deg, #000000, #4a2800);
-  background: linear-gradient(30deg, #000000, #4a2800, #000000);
+.btn-subscribe:hover {
+  background-color: #807f7c;
+}
+.footer-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 60px 0 40px 0;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.social-icons {
+  display: flex;
+  gap: 25px;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 22px;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #e5b300;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-links a {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+.copyright {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* Moslashuvchanlik (Responsive) */
+@media (max-width: 768px) {
+  .container-help {
+    flex-direction: column;
+    text-align: center;
+  }
+  .help-buttons {
+    justify-content: center;
+  }
+  .cardf {
+    flex-direction: column;
+  }
+  .card6 {
+    width: 100%;
+  }
 }
